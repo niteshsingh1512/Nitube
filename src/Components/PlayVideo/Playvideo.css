@@ -1,0 +1,196 @@
+.play-video {
+  flex-basis: 69%;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+  color: #1c1c1c;
+}
+.play-video iframe{
+  width: 100%;
+  height: 40vw;
+}
+
+.play-video video {
+  width: 100%;
+  height: 650px;
+  border-radius: 4px;
+}
+
+.play-video h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.play-video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+}
+
+.play-video-info p {
+  font-size: 15px;
+  color: #616060;
+  margin-left: 5px;
+}
+
+.play-video-info div {
+  display: flex;
+  gap: 8px;
+}
+
+.play-video-info div span {
+  display: flex;
+  align-items: center;
+  margin-left:10px;
+  margin-right: 8px;
+}
+
+.play-video-info div span img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.play-video-info div span:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+.publisher {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.publisher img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-left: 5px;
+  margin-right: 12px;
+}
+
+.publisher div {
+  margin-right: auto;
+}
+
+.publisher p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.publisher span {
+  font-size: 13px;
+  color: #575757;
+  font-weight: 600;
+}
+
+.publisher button {
+  background-color: #cc0000;
+  color: white;
+  margin-right: 10px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.publisher button.subscribed {
+  background-color: rgb(91, 90, 90);
+  color: white;
+}
+
+.vid-description {
+  margin-top: 10px;
+  margin-left: 65px;
+}
+
+.vid-description p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.vid-description h4 {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.comments {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.comments img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.comments h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.comments h3 span {
+  font-size: 12px;
+  color: #606060;
+  margin-left: 8px;
+}
+
+.comments p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.comment-section {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.comment-section img {
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.comment-section span {
+  margin-right: 20px;
+  font-size: 12px;
+  color: #606060;
+}
+@media (max-width:900px) {
+  .play-video{
+    flex-basis: 100%;
+  }
+  .play-video-iframe{
+    width: 100%;
+    height: 50vw;
+  }
+  .vid-description{
+    padding-left: 0;
+  }
+  .play-video .play-video-info span{
+    margin-left: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+}

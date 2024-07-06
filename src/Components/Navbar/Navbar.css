@@ -1,0 +1,124 @@
+.flex-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 16px;
+    height: 56px;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-left .menu-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+  
+  .nav-left .logo {
+    width: auto;
+    height: 35px;
+    margin-left: 15px;
+    margin-top: 4px;
+    cursor: pointer;
+  }
+  
+  .nav-middle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    width: 60%;
+    padding: 5px 10px;
+  }
+  
+  .search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  .search-box .search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .audio-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .audio-icon {
+    width: 17px;
+    height: 20px;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 24px;
+  }
+  
+  .nav-right .user_icon {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+  @media (max-width: 900px) {
+    .menu-icon {
+      display:none;
+    }
+    
+    .nav-right img {
+      margin-left: 15px; /* Adjust spacing for smaller screens */
+    }
+
+    .nav-right .user_icon{
+      display: block;
+      width: 30px;
+    }
+
+    .logo{
+      width: 90px;
+    }
+
+    .nav-middle .search-box input{
+      width: 100px;
+    }
+  }

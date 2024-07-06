@@ -1,0 +1,91 @@
+.sidebar {
+  margin-top: 56px;
+  width: 220px;
+  background-color: #ffffff;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+
+.sortcut-links,
+.subscribed-list {
+  padding: 8px 0;
+}
+
+.sidelink,
+.side-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidelink:hover,
+.side-link:hover {
+  background-color: #f0f0f0;
+}
+
+.sidelink img,
+.side-link img {
+  width: auto;
+  height: 25px;
+  margin-right: 16px;
+}
+
+.sidelink p,
+.side-link p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3c3c3c;
+}
+
+.subscribed-list h3 {
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c3c3c;
+}
+.subscribed-list img {
+  border-radius: 50%;
+  height: 30px;
+  width: auto;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 8px 20px;
+}
+
+.small-sidebar {
+  width: 80px;
+}
+
+.small-sidebar .sidelink p,
+.small-sidebar .side-link p {
+  display: none;
+}
+
+.small-sidebar .subscribed-list h3 {
+  display: none;
+}
+
+.small-sidebar hr {
+  width: 50%;
+  margin: 8px auto;
+}
+.sidelink.active img {
+  padding-bottom: 2px;
+  border-bottom: 3px solid red;
+}
+
+@media (max-width:900px) {
+  .sidebar{
+    display: none;
+  }
+}
